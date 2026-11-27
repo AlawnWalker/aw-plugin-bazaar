@@ -30,6 +30,13 @@
                     "zh": "知识"
                 },
                 "order": 50
+            },
+            "ui": {
+                "title": {
+                    "en": "UI",
+                    "zh": "界面"
+                },
+                "order": 30
             }
         },
         "labels": {
@@ -145,6 +152,12 @@
                 "title": {
                     "zh": "Windows",
                     "en": "Windows"
+                }
+            },
+            "widget": {
+                "title": {
+                    "en": "Widget",
+                    "zh": "挂件"
                 }
             }
         }
@@ -433,6 +446,36 @@
                         "dsh": ">=0.2.1-rc.2"
                     },
                     "notes": "双宿主：CC MCP + DSH MCP carrier"
+                }
+            ]
+        },
+        {
+            "name": "dsh-whale-widget",
+            "title": "DeepSeek 余额小鲸鱼",
+            "description": "DSH Web 右下角余额小鲸鱼：余额/今日已用/峰谷定价、泡泡序列、音效与自定义角色。",
+            "author": "aw-plugin-bazaar",
+            "repository": {
+                "url": "https://github.com/AlawnWalker/dsh-whale-widget"
+            },
+            "metadata": {
+                "category": "ui",
+                "labels": [
+                    "widget"
+                ]
+            },
+            "versions": [
+                {
+                    "version": "0.1.0",
+                    "publishTimestamp": 1795767459,
+                    "source": {
+                        "type": "git",
+                        "url": "https://github.com/AlawnWalker/dsh-whale-widget",
+                        "commit": "1de32b1ce1854c7e0856820f9f6865154c700e86"
+                    },
+                    "engines": {
+                        "dsh": ">=0.2.1-rc.2"
+                    },
+                    "notes": "第三方挂件；上游 MeteorNOX/DeepSeek-Balance-Whale-Widget。"
                 }
             ]
         }
