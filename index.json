@@ -1,0 +1,440 @@
+{
+    "format":  1,
+    "title":  {
+                  "zh":  "插件集市",
+                  "en":  "Plugin Bazaar"
+              },
+    "description":  {
+                        "zh":  "同时支持 DSH 与 Claude Code 的插件市场，插件来源按 commit 固定。",
+                        "en":  "Plugin marketplace for DSH and Claude Code, with plugin sources pinned by commit."
+                    },
+    "metadata":  {
+                     "categories":  {
+                                        "agents":  {
+                                                       "title":  {
+                                                                     "en":  "Agents",
+                                                                     "zh":  "智能体"
+                                                                 },
+                                                       "order":  20
+                                                   },
+                                        "tools":  {
+                                                      "title":  {
+                                                                    "en":  "Tools",
+                                                                    "zh":  "工具"
+                                                                },
+                                                      "order":  10
+                                                  },
+                                        "knowledge":  {
+                                                          "title":  {
+                                                                        "en":  "Knowledge",
+                                                                        "zh":  "知识"
+                                                                    },
+                                                          "order":  50
+                                                      }
+                                    },
+                     "labels":  {
+                                    "peer":  {
+                                                 "title":  {
+                                                               "en":  "Peer",
+                                                               "zh":  "点对点"
+                                                           }
+                                             },
+                                    "multi-agent":  {
+                                                        "title":  {
+                                                                      "en":  "Multi-agent",
+                                                                      "zh":  "多智能体"
+                                                                  }
+                                                    },
+                                    "ssh":  {
+                                                "title":  {
+                                                              "en":  "SSH",
+                                                              "zh":  "SSH"
+                                                          }
+                                            },
+                                    "claude-code":  {
+                                                        "title":  {
+                                                                      "en":  "Claude Code",
+                                                                      "zh":  "Claude Code"
+                                                                  }
+                                                    },
+                                    "fabric":  {
+                                                   "title":  {
+                                                                 "en":  "Fabric",
+                                                                 "zh":  "Fabric"
+                                                             }
+                                               },
+                                    "securecrt":  {
+                                                      "title":  {
+                                                                    "en":  "SecureCRT",
+                                                                    "zh":  "SecureCRT"
+                                                                }
+                                                  },
+                                    "serial":  {
+                                                   "title":  {
+                                                                 "en":  "Serial",
+                                                                 "zh":  "串口"
+                                                             }
+                                               },
+                                    "com":  {
+                                                "title":  {
+                                                              "en":  "COM",
+                                                              "zh":  "COM"
+                                                          }
+                                            },
+                                    "onenote":  {
+                                                    "title":  {
+                                                                  "en":  "OneNote",
+                                                                  "zh":  "OneNote"
+                                                              }
+                                                },
+                                    "notes":  {
+                                                  "title":  {
+                                                                "en":  "Notes",
+                                                                "zh":  "笔记"
+                                                            }
+                                              },
+                                    "markdown":  {
+                                                     "title":  {
+                                                                   "en":  "Markdown",
+                                                                   "zh":  "Markdown"
+                                                               }
+                                                 },
+                                    "mcp":  {
+                                                "title":  {
+                                                              "en":  "MCP",
+                                                              "zh":  "MCP"
+                                                          }
+                                            },
+                                    "github":  {
+                                                   "title":  {
+                                                                 "en":  "GitHub",
+                                                                 "zh":  "GitHub"
+                                                             }
+                                               },
+                                    "git":  {
+                                                "title":  {
+                                                              "en":  "Git",
+                                                              "zh":  "Git"
+                                                          }
+                                            },
+                                    "trace32":  {
+                                                    "title":  {
+                                                                  "en":  "TRACE32",
+                                                                  "zh":  "TRACE32"
+                                                              }
+                                                },
+                                    "remote-build":  {
+                                                         "title":  {
+                                                                       "zh":  "远程构建",
+                                                                       "en":  "Remote Build"
+                                                                   }
+                                                     },
+                                    "kb":  {
+                                               "title":  {
+                                                             "zh":  "知识库",
+                                                             "en":  "Knowledge Base"
+                                                         }
+                                           },
+                                    "vivado":  {
+                                                   "title":  {
+                                                                 "zh":  "Vivado",
+                                                                 "en":  "Vivado"
+                                                             }
+                                               },
+                                    "windows":  {
+                                                    "title":  {
+                                                                  "zh":  "Windows",
+                                                                  "en":  "Windows"
+                                                              }
+                                                }
+                                }
+                 },
+    "plugins":  [
+                    {
+                        "name":  "peer-link",
+                        "title":  "Peer Link 点对点消息",
+                        "description":  "DSH 与 Claude Code 共用的点对点消息与跨机 peer：本地按会话分端点、跨机走 SSH 隧道、fabric 身份（peer://），带 WSL anchor 与 Windows relay 双向发现。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/peer-link"
+                                       },
+                        "metadata":  {
+                                         "category":  "agents",
+                                         "labels":  [
+                                                        "peer",
+                                                        "multi-agent",
+                                                        "ssh",
+                                                        "claude-code",
+                                                        "fabric"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.6.8",
+                                             "publishTimestamp":  1795593480,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/peer-link",
+                                                            "commit":  "138e230bb84cde972ba17f90a6ed10253af5d963"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "命名统一为 \u003clabel\u003e [DSH] · \u003chost\u003e；修 resolveBy 的 slug 失配（曾静默丢消息）与 peer_list 的 lossless JSON"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "securecrt-plugin",
+                        "title":  "SecureCRT 串口控制",
+                        "description":  "操作本机 SecureCRT 串口会话：列会话/查端口占用、开会话（标签页）、带校验的断开、烧录前重连、聚焦标签页、自动新建会话；Claude Code 侧提供同名 skill 与脚本。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/securecrt-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "tools",
+                                         "labels":  [
+                                                        "securecrt",
+                                                        "serial",
+                                                        "com"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.3.1",
+                                             "publishTimestamp":  1795504191,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/securecrt-plugin",
+                                                            "commit":  "1fc2ae01c50ba5602575df25ab81833426574b3e"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "键盘注入：IME 检测 + 按需切换（预热方案已废弃）；SendKeys 特殊字符转义"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "onenote-plugin",
+                        "title":  "OneNote 文档",
+                        "description":  "本机 OneNote 桌面版工具（CC 走 MCP、DSH 走原生 Cordis 工具）：列/读/搜/建/更新/追加/编辑/发布/删除页面与分区。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/onenote-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "knowledge",
+                                         "labels":  [
+                                                        "onenote",
+                                                        "notes",
+                                                        "markdown",
+                                                        "mcp"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.7.13",
+                                             "publishTimestamp":  1795492696,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/onenote-plugin",
+                                                            "commit":  "506bcaad34ff26becb68effd0e0dcab21e0b00f1"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         }
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "dsh-github",
+                        "title":  "GitHub 工具（REST）",
+                        "description":  "直连 GitHub REST API：建仓库、读写文件、多文件一次提交、开 PR/issue。原生工具，不走 MCP，任何 PAT 都能用。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/dsh-github"
+                                       },
+                        "metadata":  {
+                                         "category":  "tools",
+                                         "labels":  [
+                                                        "github",
+                                                        "git"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.1.0",
+                                             "publishTimestamp":  1793839486,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/dsh-github",
+                                                            "commit":  "906dc42d7c049fb5568890e69e107aaaa5d1a278"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         }
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "trace32-plugin",
+                        "title":  "TRACE32 调试控制",
+                        "description":  "操作本机 TRACE32：查实例/RCL 端口/目标的三重证据、按配置启动、优雅 QUIT、经 RCL 发命令、批处理跑 .cmm；同时带完整的启动/连接、CMM 语义、断点/读写/装载判据、常见坑与排错清单。Claude Code 侧提供同名 skill 与脚本。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/trace32-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "tools",
+                                         "labels":  [
+                                                        "trace32",
+                                                        "claude-code"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.1.0",
+                                             "publishTimestamp":  1795759308,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/trace32-plugin",
+                                                            "commit":  "97f1b5a7bc950dd898133e8862f94218e912e15f"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "首次发布：TRACE32 知识 + 启停/RCL/批处理控制，CC skill 与 DSH tools 共用 t32.ps1"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "remote-build-plugin",
+                        "title":  "远程编译与产物回收",
+                        "description":  "SSH 登构建服务器、按任务勾选 Kconfig 模块（免交互 menuconfig）、编译、产物按分支/时间+commit 归档并校验。Claude Code 与 DSH 共用同一 skill 和脚本。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/remote-build-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "tools",
+                                         "labels":  [
+                                                        "remote-build",
+                                                        "ssh",
+                                                        "claude-code"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "publishTimestamp":  1795765683,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/remote-build-plugin",
+                                                            "commit":  "e18086e84dcad01bf344cd2713f68a5a13e9c8ef"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "双宿主统一包：CC skill/CLI + DSH skill provider"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "kb-plugin",
+                        "title":  "知识库读写",
+                        "description":  "知识库双宿主插件：6 个只读工具（列表/检索/取原文/本地读/解析报告/未解析块）+ kb_upload 上传；共享市场账号、sha256 去重、解析报告与审计。CC 走 MCP，DSH 走原生工具，两个 skill：kb-read / kb-upload。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/kb-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "knowledge",
+                                         "labels":  [
+                                                        "kb",
+                                                        "mcp",
+                                                        "claude-code"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "publishTimestamp":  1795765686,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/kb-plugin",
+                                                            "commit":  "4d476d031183711c56b899917b00d9ca20738f0f"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "合并 kb-read 与 kb-upload；七工具、两 skill、共享鉴权"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "vivado-ila-plugin",
+                        "title":  "Vivado ILA/VIO 知识",
+                        "description":  "Vivado 硬件调试通用知识：bitfile/ltx 配对、ILA/VIO 连接、触发/采样、CSV 导出与波形分析、常见坑（换机可用）。Claude Code 与 DSH 共用同一 skill。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/vivado-ila-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "knowledge",
+                                         "labels":  [
+                                                        "vivado",
+                                                        "claude-code"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "publishTimestamp":  1795765689,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/vivado-ila-plugin",
+                                                            "commit":  "312cfd38218d67514aa599a8191cfdd08a83aebb"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "双宿主统一包：CC skill + DSH skill provider"
+                                         }
+                                     ]
+                    },
+                    {
+                        "name":  "windows-mcp-plugin",
+                        "title":  "Windows 桌面控制",
+                        "description":  "把 Windows-MCP 接到 Claude Code 与 DSH：鼠标/键盘/截图/窗口/剪贴板/进程等，带工具白名单和操作纪律。CC 走 MCP，DSH 走 MCP carrier。",
+                        "author":  "aw-plugin-bazaar",
+                        "repository":  {
+                                           "url":  "https://github.com/AlawnWalker/windows-mcp-plugin"
+                                       },
+                        "metadata":  {
+                                         "category":  "tools",
+                                         "labels":  [
+                                                        "windows",
+                                                        "mcp",
+                                                        "claude-code"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.2.0",
+                                             "publishTimestamp":  1795754979,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/AlawnWalker/windows-mcp-plugin",
+                                                            "commit":  "aed91af5ffa3b7003659a7e146e1e90ea53a719e"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.1-rc.2"
+                                                         },
+                                             "notes":  "双宿主：CC MCP + DSH MCP carrier"
+                                         }
+                                     ]
+                    }
+                ]
+}

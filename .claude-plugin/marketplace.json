@@ -1,0 +1,74 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "aw-plugin-bazaar",
+  "description": "Dual-host plugin marketplace for Claude Code and DSH, with sources pinned by commit.",
+  "owner": {
+    "name": "aw-plugin-bazaar"
+  },
+  "plugins": [
+    {
+      "name": "peer-link",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/peer-link.git",
+        "sha": "138e230bb84cde972ba17f90a6ed10253af5d963"
+      }
+    },
+    {
+      "name": "securecrt-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/securecrt-plugin.git",
+        "sha": "1fc2ae01c50ba5602575df25ab81833426574b3e"
+      }
+    },
+    {
+      "name": "onenote-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/onenote-plugin.git",
+        "sha": "506bcaad34ff26becb68effd0e0dcab21e0b00f1"
+      }
+    },
+    {
+      "name": "trace32-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/trace32-plugin.git",
+        "sha": "97f1b5a7bc950dd898133e8862f94218e912e15f"
+      }
+    },
+    {
+      "name": "remote-build-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/remote-build-plugin.git",
+        "sha": "e18086e84dcad01bf344cd2713f68a5a13e9c8ef"
+      }
+    },
+    {
+      "name": "kb-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/kb-plugin.git",
+        "sha": "4d476d031183711c56b899917b00d9ca20738f0f"
+      }
+    },
+    {
+      "name": "vivado-ila-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/vivado-ila-plugin.git",
+        "sha": "312cfd38218d67514aa599a8191cfdd08a83aebb"
+      }
+    },
+    {
+      "name": "windows-mcp-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlawnWalker/windows-mcp-plugin.git",
+        "sha": "aed91af5ffa3b7003659a7e146e1e90ea53a719e"
+      }
+    }
+  ]
+}
