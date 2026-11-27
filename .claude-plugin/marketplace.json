@@ -1,74 +1,74 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "aw-plugin-bazaar",
-  "description": "Dual-host plugin marketplace for Claude Code and DSH, with sources pinned by commit.",
-  "owner": {
-    "name": "aw-plugin-bazaar"
-  },
-  "plugins": [
-    {
-      "name": "peer-link",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/peer-link.git",
-        "sha": "7ee77a30c5ad580911176c428234d699f391a63f"
-      }
+    "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+    "name": "aw-plugin-bazaar",
+    "description": "Dual-host plugin marketplace for Claude Code and DSH, with sources pinned by commit.",
+    "owner": {
+        "name": "aw-plugin-bazaar"
     },
-    {
-      "name": "securecrt-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/securecrt-plugin.git",
-        "sha": "e4934c2937308e72d17b317bbe7be855dee5e5fb"
-      }
-    },
-    {
-      "name": "onenote-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/onenote-plugin.git",
-        "sha": "d4bf5d0a6f9257b65cbaf201186a93ff238fef24"
-      }
-    },
-    {
-      "name": "trace32-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/trace32-plugin.git",
-        "sha": "0adbc94397f745dee01754b34cb29c22ed1f8bf5"
-      }
-    },
-    {
-      "name": "remote-build-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/remote-build-plugin.git",
-        "sha": "824d84c19b7d0d4d3c21413ff8d5a18280c6f5c1"
-      }
-    },
-    {
-      "name": "kb-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/kb-plugin.git",
-        "sha": "83b83b1e3f92356f91e92b7f170416e8d137945d"
-      }
-    },
-    {
-      "name": "vivado-ila-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/vivado-ila-plugin.git",
-        "sha": "7ef0c6f01e8813695b430781fa7535afe9a7018b"
-      }
-    },
-    {
-      "name": "windows-mcp-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AlawnWalker/windows-mcp-plugin.git",
-        "sha": "8a3c178514b8e8d52148d93644092e772f5756cc"
-      }
-    }
-  ]
+    "plugins": [
+        {
+            "name": "peer-link",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/peer-link.git",
+                "sha": "85de27b550991082840b6c510bfdff16717c526f"
+            }
+        },
+        {
+            "name": "securecrt-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/securecrt-plugin.git",
+                "sha": "8ed5c468658bcc0e303cdd6d86c0a60588432ebb"
+            }
+        },
+        {
+            "name": "onenote-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/onenote-plugin.git",
+                "sha": "14120714318bc7e8218c875191204d4907277942"
+            }
+        },
+        {
+            "name": "trace32-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/trace32-plugin.git",
+                "sha": "bdb46b8bd431db1eb8c1c7d3693e67b046392fb3"
+            }
+        },
+        {
+            "name": "remote-build-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/remote-build-plugin.git",
+                "sha": "07a13ac6716e52b0fac9e88ae82ee4872252421e"
+            }
+        },
+        {
+            "name": "kb-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/kb-plugin.git",
+                "sha": "9af6ce820baea94e4e55ae551facaabdd4ffb9c3"
+            }
+        },
+        {
+            "name": "vivado-ila-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/vivado-ila-plugin.git",
+                "sha": "2cb595ccc5f7ee29cbbf60ab8b81a21d4f96ec3f"
+            }
+        },
+        {
+            "name": "windows-mcp-plugin",
+            "source": {
+                "source": "url",
+                "url": "https://github.com/AlawnWalker/windows-mcp-plugin.git",
+                "sha": "000cd7d15680d720c443d0b95c266cea57bf989c"
+            }
+        }
+    ]
 }
