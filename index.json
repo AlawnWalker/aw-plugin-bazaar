@@ -325,7 +325,7 @@
         {
             "name": "remote-build-plugin",
             "title": "远程编译与产物回收",
-            "description": "SSH 登构建服务器、按任务勾选 Kconfig 模块（免交互 menuconfig）、编译、产物按分支/时间+commit 归档并校验。Claude Code 与 DSH 共用同一 skill 和脚本。",
+            "description": "SSH 登构建服务器，按配置执行 pre_build / build_cmd；项目差异放配置里，不绑定具体项目或组件；产物按分支/时间+commit 归档并校验。Claude Code 与 DSH 共用同一 skill 和脚本。",
             "author": "aw-plugin-bazaar",
             "repository": {
                 "url": "https://github.com/AlawnWalker/remote-build-plugin"
